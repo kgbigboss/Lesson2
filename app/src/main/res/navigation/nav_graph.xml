@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/postsFragment">
+
+    <fragment
+        android:id="@+id/postsFragment"
+        android:name="com.geektech.lesson2.ui.posts.PostsFragment"
+        android:label="fragment_posts"
+        tools:layout="@layout/fragment_posts" >
+        <action
+            android:id="@+id/action_postsFragment_to_fopmFragment"
+            app:destination="@id/fopmFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fopmFragment"
+        android:name="com.geektech.lesson2.ui.form.FopmFragment"
+        android:label="fragment_fopm"
+        tools:layout="@layout/fragment_fopm" >
+
+    </fragment>
+</navigation>
